@@ -1,6 +1,9 @@
 package com.h2;
 
 import java.util.Scanner;
+
+import sun.jvmstat.perfdata.monitor.CountedTimerTask;
+
 import java.util.Map;
 
 /**
@@ -20,6 +23,15 @@ public class BestLoanRates {
         final String name = scanner.nextLine();
         System.out.println("Hello " + name);
 
+        System.out.println("Enter the loan term (in years)");
+        int loanTermInYears = scanner.nextInt();
+        float bestRates = getRates(loanTermInYears);
+        if (loanTermInYears == 0.0f) {
+            System.out.println("No available rates for term: " + loanTermInYears + " years");
+        } else {
+            System.out.println("Best Available Rate: " + bestRates + "%");
+        }
+        
         scanner.close();
     }
 
