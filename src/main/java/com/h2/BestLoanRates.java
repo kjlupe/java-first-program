@@ -1,9 +1,6 @@
 package com.h2;
 
 import java.util.Scanner;
-
-import sun.jvmstat.perfdata.monitor.CountedTimerTask;
-
 import java.util.Map;
 
 /**
