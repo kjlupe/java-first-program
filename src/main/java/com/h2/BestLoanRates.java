@@ -7,7 +7,6 @@ import java.util.Map;
  * BestLoanRates
  *
  */
-
 public class BestLoanRates {
     public static final Map<Integer, Float> bestRates = Map.of(
         1, 5.50f,
@@ -22,5 +21,12 @@ public class BestLoanRates {
         System.out.println("Hello " + name);
 
         scanner.close();
+    }
+
+    public static float getRates(int loanTermInYears) {
+        if (bestRates.containsKey(loanTermInYears)) {
+            return bestRates.get(loanTermInYears);
+        }
+        return 0.0f;
     }
 }
