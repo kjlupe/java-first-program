@@ -6,7 +6,7 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (LaunchRocketToMoon) - Finance",
+            "name": "CodeLens (Launch) - Finance",
             "request": "launch",
             "mainClass": "Finance",
             "args": [
