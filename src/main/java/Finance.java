@@ -21,7 +21,7 @@ public class Finance {
 
     public static void main(String[] args) {
         String command = args[0];
-        if (!commandsToUsage.containsKey(args[0])) {
+        if (!commandsToUsage.containsKey(command)) {
             System.out.println(command + ": command not found");
         }
 
@@ -37,19 +37,16 @@ public class Finance {
 
         switch (args[0]) {
             case BEST_LOAN_RATES:
-                return (args[0].length() == 1);
+                return args.length == 1;
             case SAVINGS_CALCULATOR:
-                return (args[0].length() == 3);
+                return args.length == 3;
             case MORTGAGE_CALCULATOR:
-                return (args[0].length() == 4);
+                return args.length == 4;
         }
         return false;
     }
 
     private static void executeCommand(String command, String[] arguments) {
-        // String command;
-        //String[] arguments;
-        
         switch (command) {
             case BEST_LOAN_RATES:
                 System.out.println("Finding best loan rates ...");

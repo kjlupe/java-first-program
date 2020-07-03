@@ -9,7 +9,13 @@
             "name": "CodeLens (Launch) - Finance",
             "request": "launch",
             "mainClass": "Finance",
-            "projectName": "calc"
+            "projectName": "calc",
+            "args": [
+                "mortgageCalculator",
+                "350000",
+                "30",
+                "4.00"
+            ],
         },
         {
             "type": "java",
