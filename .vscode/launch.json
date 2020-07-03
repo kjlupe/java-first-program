@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Finance",
+            "request": "launch",
+            "mainClass": "Finance",
+            "projectName": "calc"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -29,9 +36,10 @@
             "name": "Debug (Launch)-SavingsCalculator<calc>",
             "request": "launch",
             "mainClass": "com.h2.SavingsCalculator",
-            "args": 
-            [   "10.0,20.0",
-                "5.0"],
+            "args": [
+                "10.0,20.0",
+                "5.0"
+            ],
             "projectName": "calc"
         },
         {
@@ -39,10 +47,11 @@
             "name": "Debug (Launch)-MortgageCalculator<calc>",
             "request": "launch",
             "mainClass": "com.h2.MortgageCalculator",
-            "args": 
-            [   "350000",
+            "args": [
+                "350000",
                 "30",
-                "4.00"],
+                "4.00"
+            ],
             "projectName": "calc"
         }
     ]
